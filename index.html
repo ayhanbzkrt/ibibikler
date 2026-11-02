@@ -729,10 +729,6 @@ footer{text-align:center;padding:30px 16px 100px}
 footer .author{font:800 30px "Baloo 2",sans-serif;margin:0}
 footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;color:var(--ink-2);font-weight:700;font-size:15px;margin:10px auto 0;padding:12px 0 0;border-top:2px solid var(--line);max-width:720px;list-style:none}
 footer .links li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-right:8px;vertical-align:middle}
-footer .links a{color:var(--ink-2);text-decoration:none;text-underline-offset:4px;transition:color .15s}
-footer .links a:hover{color:var(--blue-d);text-decoration:underline}
-footer .links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
-@media (max-width:600px){footer .links{gap:10px 16px;font-size:14px}footer .copy{line-height:1.7}}
 
 @media (max-width:960px){
   .tasks{grid-template-columns:repeat(2,1fr)}
@@ -788,7 +784,7 @@ footer .links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
     <div class="gate-door" id="gateDoor" aria-hidden="true"><span class="gd-l"></span><span class="gd-r"></span><span class="gd-sign">KUŞLARIN DİLİ</span></div>
     <div class="gate-birds" id="gateBirds"></div>
     <h2 id="gateT" class="sticker" style="--fill:var(--orange)">Göç Kapısı</h2>
-    <p class="gate-p">Atölyelere girmek için ibibiklerin gizli şifresini söylemelisin! Şifre, kitabının <b>4. sayfasındaki “Kuşların Dili” bilmecesinde</b> saklı. Kitaptaki <b>altın tüyler</b> de sana yardım eder.</p>
+    <p class="gate-p">Atölyelere girmek için ibibiklerin gizli şifresini söylemelisin! Şifre, kitabının <b>5. sayfasındaki “Kuşların Dili” bilmecesinde</b> saklı. Kitaptaki <b>altın tüyler</b> de sana yardım eder.</p>
     <div class="gate-in"><input class="field" id="gateIn" placeholder="Gizli şifreyi yaz" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Gizli şifre"><button class="btn violet" id="gateBtn" type="button"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-key"/></svg> Kapıyı aç</button></div>
     <div class="gate-msg" id="gateMsg" aria-live="polite"></div>
     <details class="gate-help" id="gateHelp"><summary><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-bulb"/></svg> Kitabım yanımda değil, ipucu ver</summary>
@@ -1309,7 +1305,7 @@ footer .links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
   </div>
   <div class="kr-grid" id="krGrid"></div>
   <details class="teacher"><summary>Veliler ve öğretmenler için</summary>
-    <p>“İbibikler! Yapay Zekâ Atölyesi” kitabı ile bu portal birlikte kullanılmak üzere tasarlanmıştır. Kitaptaki 33 atölye; önce kâğıt-kalem etkinliğiyle başlar, sonra sayfadaki durak numarasıyla portaldaki çalışan deneye yönlendirir. Bu sayfadaki her durak kartı, kitabın hangi sayfalarıyla eşleştiğini gösterir. Portal ilk kez açıldığında kitabın 4. sayfasındaki “Kuşların Dili” bilmecesinden elde edilen şifre istenir; bu, kitapla portal arasında küçük bir köprü ve harf-sayı kodlaması üzerine bir etkinliktir.</p>
+    <p>“İbibikler! Yapay Zekâ Atölyesi” kitabı ile bu portal birlikte kullanılmak üzere tasarlanmıştır. Kitaptaki 33 atölye; önce kâğıt-kalem etkinliğiyle başlar, sonra sayfadaki durak numarasıyla portaldaki çalışan deneye yönlendirir. Bu sayfadaki her durak kartı, kitabın hangi sayfalarıyla eşleştiğini gösterir. Portal ilk kez açıldığında kitabın 5. sayfasındaki “Kuşların Dili” bilmecesinden elde edilen şifre istenir; bu, kitapla portal arasında küçük bir köprü ve harf-sayı kodlaması üzerine bir etkinliktir.</p>
   </details>
  </div>
 </section>
@@ -1393,18 +1389,10 @@ footer .links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 
 </main>
 
-<footer aria-label="Yazar, telif ve sosyal bağlantılar">
+<footer>
   <p class="author-k">Yazar</p>
   <p class="author">AYHAN BOZKURT</p>
-  <p class="copy">© 2026 Ayhan Bozkurt — AI’Han Academy.<br>Tüm hakları saklıdır. / All rights reserved.</p>
-  <ul class="links" aria-label="AI’Han Academy bağlantıları">
-    <li><a href="https://ayhanbzkrt.github.io/benaihan/" target="_blank" rel="noopener noreferrer">AI’Han Academy</a></li>
-    <li><a href="https://www.linkedin.com/in/ayhanbozkurt/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    <li><a href="https://github.com/ayhanbzkrt" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    <li><a href="https://medium.com/@ayhanbzkrt" target="_blank" rel="noopener noreferrer">Medium</a></li>
-    <li><a href="https://www.kitapyurdu.com/yazar/ayhan-bozkurt/260288.html" target="_blank" rel="noopener noreferrer">Kitapyurdu — Yazar Sayfası</a></li>
-    <li><a href="https://www.youtube.com/@ayhanbzkrt/videos" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-  </ul>
+  <p class="copy">© 2026 Ayhan Bozkurt · İbibikler! Yapay Zekâ Atölyesi</p>
 </footer>
 
 <div class="fab"><button class="sndbox" id="soundBtn" type="button" aria-pressed="true" aria-label="Sesi kapat"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-volume"/></svg></button><a class="starbox" href="#rozetler" id="starbox" aria-label="Yıldızlarım"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg> <span id="starCount">0</span></a></div>
@@ -5023,18 +5011,18 @@ Object.assign(TERMS,{
 });
 LABS.cipi.total=11;LABS.gezo.total=12;
 const DURAK=[
- {n:1,b:'lula',t:'Örnekle öğrenme',d:'Lula’ya çizerek şekil öğret; sonra hiç görmediği yeni çizimleri tahmin ettir. Veri, etiket, eğitim ve sınav burada.',p:'10–15',a:[['lula','l-draw','Çiz, Öğret, Tahmin Et']]},
- {n:2,b:'lula',t:'Tahmin ve güven',d:'Güven eşiğini kaydır: Lula hangi nesneleri kaçırıyor, hangilerinde yanlış alarm veriyor?',p:'16',a:[['lula','l-det','Nesne Dedektifi']]},
- {n:3,b:'lula',t:'Pikseller ve resimler',d:'Resmin minik karelerini boya, iki resmi karşılaştır, filtre gözlükleriyle kenarları bul.',p:'17–19',a:[['lula','l-pix','Piksel Gözlüğü'],['lula','l-diff','Farkı Bul'],['lula','l-fil','Filtre Gözlükleri']]},
- {n:4,b:'cipi',t:'Sesler',d:'Sesini dalga olarak gör; ince ve kalın sesleri, hızlı ve yavaş ritimleri karşılaştır.',p:'21–22',a:[['cipi','c-ses','Ses Laboratuvarı']]},
- {n:5,b:'cipi',t:'Sözcükler ve sohbet',d:'Cümleyi parçalara ayır, kelimelerin arkadaşlarını bul, Çipi’ye açık sorular sor, çeviri robotunu dene.',p:'23–24, 26–27',a:[['cipi','c-tok','Kelime Parçalayıcı'],['cipi','c-map','Kelime Haritası'],['cipi','c-chat','Çipi ile Sohbet'],['cipi','c-ceviri','Çeviri Robotu']]},
- {n:6,b:'musi',t:'Sıradaki sözcük',d:'Müşi’nin küçük dil modeli, hangi kelimenin hangisinden sonra geldiğini sayarak tahmin eder.',p:'25',a:[['musi','m-next','Sıradaki Kelime Ne?']]},
- {n:7,b:'musi',t:'Hikâye ve resim üretme',d:'Masal makinesine kahraman, yer ve olay seç; resim makinesine tarif ver. Sonra sonucu sen düzenle!',p:'29–31',a:[['musi','m-story','Masal Makinesi'],['musi','m-art','Resim Makinesi']]},
- {n:8,b:'gezo',t:'Yol bulan robot',d:'Gezo’ya komut ver, sensörlerine kural yaz, bahçeye engel ekleyip yolun nasıl değiştiğini izle.',p:'36–38',a:[['gezo','g-cmd','Gezo’ya Komut Ver'],['gezo','g-sen','Sensörlü Labirent'],['gezo','g-q','Solucanı Bul']]},
- {n:9,b:'gezo',t:'Ödülle öğrenme',d:'Doğru hareketi ödüllendir; Gezo çok denemeyle en iyi yolu öğrensin.',p:'39',a:[['gezo','g-band','Ödülle Eğit'],['gezo','g-q','Solucanı Bul']]},
- {n:10,b:'musi',t:'Yapay sinir ağı',d:'Minik bir yapay nöronu VEYA ve VE kurallarıyla eğit; ağırlıkların nasıl değiştiğini gör.',p:'32–34',a:[['python','5.3','Ders 5.3: Yapay nöron'],['python','5.4','Ders 5.4: Eğitim ve hata']]},
- {n:11,b:'gezo',t:'Yapay zekâ ajanı',d:'Gezo büyük bir görevi adımlara böler, araç kullanır ve izin ister. Planındaki hatalı adımı bul!',p:'40–41, 47',a:[['gezo','g-ajan','Ajan Gezo']]},
- {n:12,b:'cipi',t:'Güvenli ve sorumlu yapay zekâ',d:'Özel bilgilerini koru, duyduğunu doğrula, adil örnekler topla.',p:'43–46',a:[['cipi','c-guven','Güvenlik Kalkanı'],['lula','l-draw','Önyargı deneyi (Çiz, Öğret)']]}
+ {n:1,b:'lula',t:'Örnekle öğrenme',d:'Lula’ya çizerek şekil öğret; sonra hiç görmediği yeni çizimleri tahmin ettir. Veri, etiket, eğitim ve sınav burada.',p:'11–16',a:[['lula','l-draw','Çiz, Öğret, Tahmin Et']]},
+ {n:2,b:'lula',t:'Tahmin ve güven',d:'Güven eşiğini kaydır: Lula hangi nesneleri kaçırıyor, hangilerinde yanlış alarm veriyor?',p:'17',a:[['lula','l-det','Nesne Dedektifi']]},
+ {n:3,b:'lula',t:'Pikseller ve resimler',d:'Resmin minik karelerini boya, iki resmi karşılaştır, filtre gözlükleriyle kenarları bul.',p:'18–20',a:[['lula','l-pix','Piksel Gözlüğü'],['lula','l-diff','Farkı Bul'],['lula','l-fil','Filtre Gözlükleri']]},
+ {n:4,b:'cipi',t:'Sesler',d:'Sesini dalga olarak gör; ince ve kalın sesleri, hızlı ve yavaş ritimleri karşılaştır.',p:'22–23',a:[['cipi','c-ses','Ses Laboratuvarı']]},
+ {n:5,b:'cipi',t:'Sözcükler ve sohbet',d:'Cümleyi parçalara ayır, kelimelerin arkadaşlarını bul, Çipi’ye açık sorular sor, çeviri robotunu dene.',p:'24–25, 27–28',a:[['cipi','c-tok','Kelime Parçalayıcı'],['cipi','c-map','Kelime Haritası'],['cipi','c-chat','Çipi ile Sohbet'],['cipi','c-ceviri','Çeviri Robotu']]},
+ {n:6,b:'musi',t:'Sıradaki sözcük',d:'Müşi’nin küçük dil modeli, hangi kelimenin hangisinden sonra geldiğini sayarak tahmin eder.',p:'26',a:[['musi','m-next','Sıradaki Kelime Ne?']]},
+ {n:7,b:'musi',t:'Hikâye ve resim üretme',d:'Masal makinesine kahraman, yer ve olay seç; resim makinesine tarif ver. Sonra sonucu sen düzenle!',p:'30–32',a:[['musi','m-story','Masal Makinesi'],['musi','m-art','Resim Makinesi']]},
+ {n:8,b:'gezo',t:'Yol bulan robot',d:'Gezo’ya komut ver, sensörlerine kural yaz, bahçeye engel ekleyip yolun nasıl değiştiğini izle.',p:'37–39',a:[['gezo','g-cmd','Gezo’ya Komut Ver'],['gezo','g-sen','Sensörlü Labirent'],['gezo','g-q','Solucanı Bul']]},
+ {n:9,b:'gezo',t:'Ödülle öğrenme',d:'Doğru hareketi ödüllendir; Gezo çok denemeyle en iyi yolu öğrensin.',p:'40',a:[['gezo','g-band','Ödülle Eğit'],['gezo','g-q','Solucanı Bul']]},
+ {n:10,b:'musi',t:'Yapay sinir ağı',d:'Minik bir yapay nöronu VEYA ve VE kurallarıyla eğit; ağırlıkların nasıl değiştiğini gör.',p:'33–35',a:[['python','5.3','Ders 5.3: Yapay nöron'],['python','5.4','Ders 5.4: Eğitim ve hata']]},
+ {n:11,b:'gezo',t:'Yapay zekâ ajanı',d:'Gezo büyük bir görevi adımlara böler, araç kullanır ve izin ister. Planındaki hatalı adımı bul!',p:'41–42, 48',a:[['gezo','g-ajan','Ajan Gezo']]},
+ {n:12,b:'cipi',t:'Güvenli ve sorumlu yapay zekâ',d:'Özel bilgilerini koru, duyduğunu doğrula, adil örnekler topla.',p:'44–47',a:[['cipi','c-guven','Güvenlik Kalkanı'],['lula','l-draw','Önyargı deneyi (Çiz, Öğret)']]}
 ];
 const ACT_DURAK={};DURAK.forEach(d=>d.a.forEach(([v,id])=>{if(!ACT_DURAK[id])ACT_DURAK[id]=d.n;}));
 const dz=n=>String(n).padStart(2,'0');
@@ -5054,7 +5042,7 @@ function gateTry(){const raw=$('#gateIn').value;const n=raw.toLocaleLowerCase('t
     [523,659,784,1047].forEach((f,i)=>tone({f,t:(actx()||{currentTime:0}).currentTime+i*.12,d:.25,type:'triangle',v:.2}));confetti(60);
     setTimeout(()=>{gateClose();const v=GATE.pending||'home';GATE.pending=null;if(location.hash.slice(1)===v)show(v,true);else location.hash=v;},1500);}
   else{gateTry.n=(gateTry.n||0)+1;SFX.wrong();const c=$('.gate-card');c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');
-    $('#gateMsg').innerHTML=gateTry.n>=2?`Olmadı. İpucu: kitabının 4. sayfasında Çipi’nin sayı şifresi var. Aşağıdaki “ipucu ver” kutusunu da açabilirsin.`:`Hmm, kapı açılmadı. Kitabındaki “Kuşların Dili” bilmecesine tekrar bak!`;if(gateTry.n>=3)$('#gateHelp').open=true;}}
+    $('#gateMsg').innerHTML=gateTry.n>=2?`Olmadı. İpucu: kitabının 5. sayfasında Çipi’nin sayı şifresi var. Aşağıdaki “ipucu ver” kutusunu da açabilirsin.`:`Hmm, kapı açılmadı. Kitabındaki “Kuşların Dili” bilmecesine tekrar bak!`;if(gateTry.n>=3)$('#gateHelp').open=true;}}
 /* ---- Kitap Rotası ---- */
 function initKitap(){if(initKitap.done){drawKr();return;}initKitap.done=1;
   $('#krGo').onclick=()=>{const n=+$('#krIn').value;if(!goDurak(n)){$('#krInfo').textContent='1 ile 12 arasında bir durak numarası yaz.';SFX.wrong();}else SFX.magic();};
