@@ -729,6 +729,10 @@ footer{text-align:center;padding:30px 16px 100px}
 footer .author{font:800 30px "Baloo 2",sans-serif;margin:0}
 footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;color:var(--ink-2);font-weight:700;font-size:15px;margin:10px auto 0;padding:12px 0 0;border-top:2px solid var(--line);max-width:720px;list-style:none}
 footer .links li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-right:8px;vertical-align:middle}
+footer .links a{color:var(--ink-2);text-decoration:none;text-underline-offset:4px;transition:color .15s}
+footer .links a:hover{color:var(--blue-d);text-decoration:underline}
+footer .links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+@media (max-width:600px){footer .links{gap:10px 16px;font-size:14px}footer .copy{line-height:1.7}}
 
 @media (max-width:960px){
   .tasks{grid-template-columns:repeat(2,1fr)}
@@ -1389,10 +1393,18 @@ footer .links li::before{content:"";display:inline-block;width:6px;height:6px;bo
 
 </main>
 
-<footer>
+<footer aria-label="Yazar, telif ve sosyal bağlantılar">
   <p class="author-k">Yazar</p>
   <p class="author">AYHAN BOZKURT</p>
-  <p class="copy">© 2026 Ayhan Bozkurt · İbibikler! Yapay Zekâ Atölyesi</p>
+  <p class="copy">© 2026 Ayhan Bozkurt — AI’Han Academy.<br>Tüm hakları saklıdır. / All rights reserved.</p>
+  <ul class="links" aria-label="AI’Han Academy bağlantıları">
+    <li><a href="https://ayhanbzkrt.github.io/benaihan/" target="_blank" rel="noopener noreferrer">AI’Han Academy</a></li>
+    <li><a href="https://www.linkedin.com/in/ayhanbozkurt/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://github.com/ayhanbzkrt" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="https://medium.com/@ayhanbzkrt" target="_blank" rel="noopener noreferrer">Medium</a></li>
+    <li><a href="https://www.kitapyurdu.com/yazar/ayhan-bozkurt/260288.html" target="_blank" rel="noopener noreferrer">Kitapyurdu — Yazar Sayfası</a></li>
+    <li><a href="https://www.youtube.com/@ayhanbzkrt/videos" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+  </ul>
 </footer>
 
 <div class="fab"><button class="sndbox" id="soundBtn" type="button" aria-pressed="true" aria-label="Sesi kapat"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-volume"/></svg></button><a class="starbox" href="#rozetler" id="starbox" aria-label="Yıldızlarım"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg> <span id="starCount">0</span></a></div>
